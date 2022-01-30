@@ -154,10 +154,16 @@ function mousePressed() {
 }
 
 function mouseDragged() {
-  vertex(mouseX, mouseY);
-  endShape();
-  beginShape(LINES);
-  vertex(mouseX, mouseY);
+  runAllTest();
+  if(over_color_box || over_brush_box || over_reset_box) {
+
+  }
+  else {
+    vertex(mouseX, mouseY);
+    endShape();
+    beginShape(LINES);
+    vertex(mouseX, mouseY);
+  }
 }
 
 function mouseReleased() {
