@@ -8,6 +8,8 @@ let over_color;
 function setup() {
   createCanvas(1000, 600);
 
+  rect(0, 0, 1000, 600);
+
   num_of_colors = 10;
   color_box = rect(0, 0, 35, (num_of_colors * 30) + 5);
 
